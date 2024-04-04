@@ -1,0 +1,35 @@
+.headerTelasGrandes {
+    padding: .75rem 5rem;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;    
+}
+
+.headerGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr 3fr 1fr;
+    align-items: center;
+}
+
+.logoPC {
+    width: auto;
+    height: 3rem;
+    margin: auto;
+}
+
+.menuItemPC {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cardPC {
+    width: 2rem;
+    height: auto;
+    margin: auto;
+}

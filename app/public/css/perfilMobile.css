@@ -1,0 +1,50 @@
+.bannerProfile {
+    margin: 0;
+}
+
+.headerProfile {
+    margin-bottom: 0;
+}
+
+.layoutPerfilMobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: rgb(18, 45, 66);
+}
+
+.perfilPhotoMobile {
+    position: relative;
+    width: 8rem;
+    height: auto;
+    border-radius: 10.875rem;
+    bottom: 5rem;
+}
+
+.perfilNameMobile {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.perfilBiographName {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.perfilAboutMobile {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
