@@ -17,4 +17,8 @@ router.get("/profile", function (req, res) {
     res.render("pages/profile");
 });
 
+router.get('/adm', function (req, res) {
+    res.render("pages/admin/index_adm.ejs")
+})
+
 module.exports = router;
