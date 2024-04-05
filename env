@@ -1,8 +1,6 @@
-DB_HOST = localhost
-DB_USER = root
-DB_PASSWORD = 123456
-DB_PASSWORDITB = @ITB123456
-DB_NAME = hotel
-BD_PORT = 3305
-
-APP_PORT = 3000
+MYSQL_ADDON_HOST=bub8hlg91azxgdpmyxwf-mysql.services.clever-cloud.com
+MYSQL_ADDON_DB=bub8hlg91azxgdpmyxwf
+MYSQL_ADDON_USER=uzwkq9wocravacly
+MYSQL_ADDON_PORT=3306
+MYSQL_ADDON_PASSWORD=eFBJAwP7rdNFMgV4pA6i
+MYSQL_ADDON_URI=mysql://uzwkq9wocravacly:eFBJAwP7rdNFMgV4pA6i@bub8hlg91azxgdpmyxwf-mysql.services.clever-cloud.com:3306/bub8hlg91azxgdpmyxwf
