@@ -21,4 +21,12 @@ router.get('/adm', function (req, res) {
     res.render("pages/admin/index_adm.ejs")
 })
 
+router.get('/register', function (req, res) {
+    res.render("pages/cadastro.ejs")
+})
+
+router.get('/login', function (req, res) {
+    res.render("pages/login.ejs")
+})
+
 module.exports = router;
