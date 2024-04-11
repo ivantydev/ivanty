@@ -108,3 +108,19 @@
     font-weight: 700;
     line-height: normal;
 }
+
+.buyitemContainerPC {
+    margin: 2rem 5rem;
+    padding: 2rem;
+    background: rgb(18, 45, 66);
+    border-radius: 1rem;
+}
+
+.buyitemimagePC {
+    width: 100%;
+}
+
+.buyitemgridPC {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+}

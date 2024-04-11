@@ -33,4 +33,12 @@ router.get('/buyitem', function (req, res) {
     res.render("pages/buyitem.ejs")
 })
 
+router.get('/card', function (req, res) {
+    res.render("pages/card.ejs")
+})
+
+router.get('/artist_painel', function (req, res) {
+    res.render("pages/artistPainel.ejs")
+})
+
 module.exports = router;

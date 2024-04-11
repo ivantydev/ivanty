@@ -1,7 +1,7 @@
 .headerTelasGrandes {
     padding: .75rem 5rem;
     background: rgb(0, 0, 0);
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 1000;    
 }
