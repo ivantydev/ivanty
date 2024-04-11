@@ -124,3 +124,13 @@
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
 }
+
+.buyitemtitlePC {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: right;
+}
