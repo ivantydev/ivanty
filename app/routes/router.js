@@ -29,4 +29,8 @@ router.get('/login', function (req, res) {
     res.render("pages/login.ejs")
 })
 
+router.get('/buyitem', function (req, res) {
+    res.render("pages/buyitem.ejs")
+})
+
 module.exports = router;
