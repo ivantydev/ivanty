@@ -23,8 +23,8 @@ a {
 
 
 .banner {
-    animation-duration: 2s;
-    animation-name: slidein;
+    /* animation-duration: 2s;
+    animation-name: slidein; */
     width: 100%;
     height: auto;
   }
@@ -279,4 +279,8 @@ a {
     height: 12rem;
     margin-top: 1rem;
     object-fit: cover;
+}
+
+.mainPerfilMobile {
+    background: rgb(18, 45, 66);
 }

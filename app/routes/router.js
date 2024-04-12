@@ -41,4 +41,8 @@ router.get('/artist_painel', function (req, res) {
     res.render("pages/artistPainel.ejs")
 })
 
+router.get('/artist', function (req, res) {
+    res.render("pages/artist.ejs")
+})
+
 module.exports = router;
