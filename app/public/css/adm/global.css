@@ -3,3 +3,10 @@
     padding: 0;
     margin: 0;
 }
+
+.adminPainel {
+    margin: 3rem 15rem;
+    padding: 2rem;
+    background-color: #ff0000;
+    border-radius: 1rem;
+}
