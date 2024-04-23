@@ -28,7 +28,7 @@ Copiar esto
   background: rgb(18, 45, 66);
   color: #fff;
 }
-.perfil-usuario .sombra {
+.perfil-usuario .shadow {
   position: absolute;
   display: block;
   background: linear-gradient(transparent,rgba(0, 0, 0, .5));
@@ -37,25 +37,25 @@ Copiar esto
   bottom: 0;
   left: 0;
 }
-.perfil-usuario .portada-perfil,
-.perfil-usuario .sombra {
+.perfil-usuario .enter-perfil,
+.perfil-usuario .shadow {
   border-radius: 0 0 20px 20px;
 }
 .perfil-usuario img {
   width: 100%;
 }
-.contenedor-perfil {
+.container-perfil {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
-.perfil-usuario .contenedor-perfil {
+.perfil-usuario .container-perfil {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
 }
-.perfil-usuario .portada-perfil {
+.perfil-usuario .enter-perfil {
   display: block;
   background-size: cover;
   background-position: center;
@@ -77,7 +77,7 @@ Copiar esto
   border: 8px solid #FFFFFF;
   box-shadow: 0 0 12px 2px rgba(0, 0, 0, .2);
 }
-.perfil-usuario .cambiar-foto {
+.perfil-usuario .takePicture {
   position: absolute;
   width: 100%;
   display: flex;
@@ -94,15 +94,15 @@ Copiar esto
   opacity: 0;
   transition: all ease-in 200ms;
 }
-.perfil-usuario .cambiar-foto i {
+.perfil-usuario .takePicture i {
   margin-bottom: .5rem;
   font-size: 2rem;
 }
-.perfil-usuario .avatar-perfil:hover .cambiar-foto {
+.perfil-usuario .avatar-perfil:hover .takePicture {
   transform: translateY(0);
   opacity: 1;
 }
-.perfil-usuario .datos-perfil {
+.perfil-usuario .date-perfil {
   position: absolute;
   display: block;
   width: calc(100% - 230px - 8rem);
@@ -133,13 +133,13 @@ Copiar esto
   margin-right: 1rem;
 }
 
-.perfil-usuario .opcciones-perfil {
+.perfil-usuario .opção-perfil {
   display: block;
   position: absolute;
   right: 2rem;
   top: 1rem;
 }
-.perfil-usuario .opcciones-perfil button {
+.perfil-usuario .opção-perfil button {
   border: 0;
   padding: 8px 20px;
   border-radius: 8px;
@@ -169,18 +169,18 @@ Copiar esto
   background-color: #4CB0C6;
   color: #fff;
 }
-.perfil-usuario .icono-perfil {
+.perfil-usuario .icon-perfil {
   display: none;
   margin-right: .75rem;
 }
 @media (max-width: 780px) {
-  .perfil-usuario .contenedor-perfil {
+  .perfil-usuario .container-perfil {
       width: 100%;
   }
   .perfil-usuario .avatar-perfil {
       left: calc(50% - 115px)
   }
-  .perfil-usuario .datos-perfil {
+  .perfil-usuario .date-perfil {
       bottom: 200px;
       left: 0;
       width: 100%;
@@ -196,7 +196,7 @@ Copiar esto
   .perfil-usuario .titulo-usuario {
       font-size: 2.1rem;
   }
-  .perfil-usuario .portada-perfil {
+  .perfil-usuario .enter-perfil {
       height: 28rem;
   }
   .perfil-usuario .menu-perfil ul {
@@ -219,24 +219,10 @@ Copiar esto
       border-radius: 12px;
       box-shadow: 0 0 12px 2px rgba(0, 0, 0, .1);
   }
-  .perfil-usuario .icono-perfil {
+  .perfil-usuario .icon-perfil {
       display: inline-block;
   }
 }
-
-
-
-
-.mensaje a {
-  color: inherit;
-  margin-right: .5rem;
-  display: inline-block;
-}
-.mensaje a:hover {
-  color: #309B76;
-  transform: scale(1.4)
-}
-
 
 .addObras {
   text-align: center;
