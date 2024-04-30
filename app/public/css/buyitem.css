@@ -122,15 +122,106 @@
 
 .buyitemgridPC {
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
 }
 
 .buyitemtitlePC {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: left;
+    margin: 0 1rem;
+}
+
+.buyitemartistPC {
+    margin: 0rem 1rem;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.buyitembuttonPC {
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    background: rgb(43, 71, 208);
+    padding: 1rem;
+    margin: 2rem 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.buyitemaddtocardPC {
+    cursor: pointer;
+    border-radius: 2rem;
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    margin: 2rem 1rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+
+
+.buyitemdescriptionPC {
+    margin: 3rem 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.buyitemdescriptiontitlePC {
+    margin: 1rem 0;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.buyitemdescriptiontextPC {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.buyitemmoredetailsPC {
+    margin: 1rem 0;
+    font-family: Roboto;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.buyitempricePC {
+    margin: 1rem ;
     color: rgb(255, 255, 255);
     font-family: Roboto;
     font-size: 1.5625rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    text-align: right;
+    text-align: left;
 }
