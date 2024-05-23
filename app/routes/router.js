@@ -5,6 +5,10 @@ router.get("/", function (req, res) {
     res.render("pages/index");
 });
 
+router.get("/home", function (req, res) {
+    res.render("pages/home");
+});
+
 router.get("/artists", function (req, res) {
     res.render("pages/artists");
 });

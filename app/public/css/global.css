@@ -8,7 +8,7 @@
 }
 
 html {
-    background-color: #000;
+    background-color: #fff;
 }
 
 a {
@@ -45,7 +45,7 @@ a {
 
 
 .artistasEmDestaque {
-    background-color: rgb(18, 45, 66);
+    /* background-color: rgb(18, 45, 66); */
     padding: 1rem;
     width: 100%;
     margin-top: 1rem;
@@ -59,7 +59,6 @@ a {
 }
 
 .obrasEmDestaque {
-    background-color: rgb(18, 45, 66);
     padding: 1rem;
     width: 100%;
     margin-top: 1rem;
@@ -112,11 +111,11 @@ a {
 }
 
 .artistName {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin: 0.5rem auto;
     font-family: Roboto;
-    font-size: 1rem;
-    font-style: normal;
+    font-size: 1.2rem;
+    font-style: italic;
     font-weight: 400;
     line-height: normal;
     text-align: center;
@@ -125,7 +124,7 @@ a {
 
 .artContainer {
     padding: 1.5rem;
-    background: #ffffffde;
+    background: rgb(0, 8, 46);
     margin: 1rem;
     border-radius: 1rem;
 }
@@ -137,7 +136,7 @@ a {
 }
 
 .artName {
-    color: #000;
+    color: #fff;
     font-family: Roboto;
     font-size: 1.375rem;
     font-style: normal;
@@ -146,7 +145,7 @@ a {
 }
 
 .artAuthor {
-    color: #050505;
+    color: #fff;
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
@@ -155,7 +154,7 @@ a {
 }
 
 .artPrice {
-    color: #000;
+    color: #fff;
     font-family: Roboto;
     font-size: 1.5625rem;
     font-style: normal;
@@ -167,7 +166,7 @@ a {
 .artButton {
     border: none;
     border-radius: 1.25rem;
-    background:rgb(18, 45, 66);
+    background:rgb(43, 71, 208);
     padding: 1rem;
     cursor: pointer;
     margin-right: 1rem;
@@ -213,12 +212,11 @@ a {
 
 .carrosellPC {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 1rem;
 }
 
 .artistasEmDestaqueTextPC {
-    color: rgb(255, 255, 255);
     font-family: Roboto;
     font-size: 1.375rem;
     font-style: normal;
@@ -228,10 +226,8 @@ a {
 }
 
 .artistasEmDestaquePC {
-    background-color:rgb(18, 45, 66);
-    padding: 1rem;
     width: 100%;
-    padding: 1rem 5rem;
+    padding: 1rem 10rem;
     margin-top: 1rem;
 }
 
@@ -254,9 +250,8 @@ a {
 
 .obrasEmDestaquePC {
     width: 100%;
-    padding: 1rem 5rem;
+    padding: 1rem 10rem;
     margin-top: 2rem;
-    background: rgb(18, 45, 66);
 }
 
 .obrasEmDestaqueTextPC {
@@ -283,4 +278,43 @@ a {
 
 .mainPerfilMobile {
     background: rgb(18, 45, 66);
+}
+
+.comprarArteOnlineH1 {
+    font-size: 2.5rem;
+    font-family: 'Roboto';
+}
+
+.comprarArteOnlineP {
+    font-size: 1.1rem;
+    font-family: 'Roboto';
+}
+
+.EstilosDeObraArtePC {
+    width: 100%;
+    padding: 1rem 10rem;
+    margin-top: 2rem;
+}
+
+.ObrasMaisVendidas {
+    width: 100%;
+    padding: 1rem 10rem;
+    margin-top: 2rem;
+}
+
+.obrasMaisVendidasGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.EstilosDeObraArte {
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.ObrasMaisVendidas {
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
 }

@@ -37,50 +37,17 @@
     <%- include("../partial/headerPC") %>
     <main class="mainTelasGrandes">
         <img src="images/popartBanner.png" alt="" class="bannerPC">
-        <section class="artistasPC">
+
+        <section class="artistPainelPC">
+          <h1 class="comprarArteOnlineH1">CONHEÇA OS PRINCIPAIS ARTISTAS DA NOSSA PLATAFORMA</h1>
+          <p class="comprarArteOnlineP">Os artistas da nossa plataforma estão reunidos aqui</p>
           <section class="artistGridPC">
-            <section class="artistCardPC">
-              <img src="images/artist.jpg" alt="" class="artistCardPhoto">
-              <section class="artistTexts">
-                <h3 class="artistCardName">Artista</h3>
-                <p class="artistCardBio">Artista Biografia</p>
-                <a href="artist.html">
-                  <input type="button" value="Ver mais" class="seeMoreButton">
-                </a>
-              </section>
-            </section>
-            <section class="artistCardPC">
-              <img src="images/artist.jpg" alt="" class="artistCardPhoto">
-              <section class="artistTexts">
-                <h3 class="artistCardName">Artista</h3>
-                <p class="artistCardBio">Artista Biografia</p>
-                <a href="artist.html">
-                  <input type="button" value="Ver mais" class="seeMoreButton">
-                </a>
-              </section>
-            </section>
-            <section class="artistCardPC">
-              <img src="images/artist.jpg" alt="" class="artistCardPhoto">
-              <section class="artistTexts">
-                <h3 class="artistCardName">Artista</h3>
-                <p class="artistCardBio">Artista Biografia</p>
-                <a href="artist.html">
-                  <input type="button" value="Ver mais" class="seeMoreButton">
-                </a>
-              </section>
-            </section>
-            <section class="artistCardPC">
-              <img src="images/artist.jpg" alt="" class="artistCardPhoto">
-              <section class="artistTexts">
-                <h3 class="artistCardName">Artista</h3>
-                <p class="artistCardBio">Artista Biografia</p>
-                <a href="artist.html">
-                  <input type="button" value="Ver mais" class="seeMoreButton">
-                </a>
-              </section>
-            </section>
+            <%- include("../partial/artistContainer") %>      
+            <%- include("../partial/artistContainer") %>      
+            <%- include("../partial/artistContainer") %>      
+            <%- include("../partial/artistContainer") %>      
           </section>
-        </section>    
+      </section>
       </main>  
     </section>
     <%- include("../partial/footer") %>
