@@ -8,7 +8,7 @@
 }
 
 html {
-    background-color: #313536;
+    background-color: #000;
 }
 
 a {
@@ -125,7 +125,7 @@ a {
 
 .artContainer {
     padding: 1.5rem;
-    background: rgb(0, 8, 46);
+    background: #ffffffde;
     margin: 1rem;
     border-radius: 1rem;
 }
@@ -137,7 +137,7 @@ a {
 }
 
 .artName {
-    color: rgb(255, 255, 255);
+    color: #000;
     font-family: Roboto;
     font-size: 1.375rem;
     font-style: normal;
@@ -146,7 +146,7 @@ a {
 }
 
 .artAuthor {
-    color: rgb(255, 255, 255);
+    color: #050505;
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
@@ -155,7 +155,7 @@ a {
 }
 
 .artPrice {
-    color: rgb(255, 255, 255);
+    color: #000;
     font-family: Roboto;
     font-size: 1.5625rem;
     font-style: normal;
@@ -167,7 +167,7 @@ a {
 .artButton {
     border: none;
     border-radius: 1.25rem;
-    background: rgb(123, 135, 194);
+    background:rgb(18, 45, 66);
     padding: 1rem;
     cursor: pointer;
     margin-right: 1rem;
@@ -228,7 +228,7 @@ a {
 }
 
 .artistasEmDestaquePC {
-    background-color: rgb(18, 45, 66);
+    background-color:rgb(18, 45, 66);
     padding: 1rem;
     width: 100%;
     padding: 1rem 5rem;
