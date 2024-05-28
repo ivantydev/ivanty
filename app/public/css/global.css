@@ -241,9 +241,26 @@ a {
     margin: 1rem;
 }
 
+.categoriasEmDestaqueText {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 1rem 0;
+}
+
 .categoriasEmDestaquePC {
     background-color: rgb(18, 45, 66);
     padding: 1rem 5rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.categoriasEmDestaque {
+    background-color: rgb(18, 45, 66);
+    padding: 1rem;
     width: 100%;
     margin-top: 2rem;
 }
