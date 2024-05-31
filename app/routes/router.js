@@ -49,4 +49,8 @@ router.get('/artist', function (req, res) {
     res.render("pages/artist.ejs")
 })
 
+router.get('/requests', function (req, res) {
+    res.render("pages/requests.ejs")
+})
+
 module.exports = router;

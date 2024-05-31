@@ -1,5 +1,5 @@
 .headerTelasGrandes {
-    padding: .75rem 5rem;
+    padding: .75rem;
     background: rgb(0, 0, 0);
     /* position: fixed; */
     width: 100%;
@@ -16,6 +16,7 @@
     width: auto;
     height: 3rem;
     margin: auto;
+    display: inline-block;
 }
 
 .menuItemPC {
@@ -32,4 +33,13 @@
     width: 2rem;
     height: auto;
     margin: auto;
+}
+
+.logoName {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  color: #F0E968;
+  display: inline-block;
 }
