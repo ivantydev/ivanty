@@ -109,3 +109,14 @@ img {vertical-align: middle;}
   width: 100%;
   height: auto;
 }
+
+.obrasMaisVendidasGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;   
+  grid-gap: 1rem;
+}
+
+.obrasMaisVendidasImagem {
+  width: 100%;
+  height: auto;
+}
