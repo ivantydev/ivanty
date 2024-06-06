@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black ;
+    background-color: white ;
   }
   
   .container {
@@ -33,7 +33,8 @@
   
   .form {
     padding: 20px;
-    background: #ffff;
+    background: #ffffff;
+   
   
 
   }

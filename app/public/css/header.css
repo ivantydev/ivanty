@@ -1,6 +1,6 @@
 .headerTelasMenores {   
     padding: 1rem;
-    background: #000;
+    background: #fff;
 }
   
 .gridContainer {
@@ -22,7 +22,7 @@
 }
 
 .quickNavigationP {
-    color: rgb(255, 255, 255);
+    color: black;
     font-family: Roboto, sans-serif;
     font-size: 1.1rem;
     font-weight: 300;
@@ -35,3 +35,4 @@
     width: 2rem;
     margin: 1rem;
 }
+
