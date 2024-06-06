@@ -283,7 +283,6 @@ a {
 
 .artImagePC {
     width: 100%;
-    height: 12rem;
     margin-top: 1rem;
     object-fit: cover;
 }
@@ -322,8 +321,8 @@ a {
 
 .obrasMaisVendidasGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+} 
 
 .EstilosDeObraArte {
     padding: 1rem;
@@ -337,3 +336,7 @@ a {
     margin-top: 1rem;
 }
 
+.obrasMaisVendidasMobileGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -120,3 +120,14 @@ img {vertical-align: middle;}
   width: 100%;
   height: auto;
 }
+
+.obrasMaisVendidasMobileGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   
+  grid-gap: 1rem;
+}
+
+.obrasMaisVendidasMobileImagem {
+  width: 100%;
+  height: auto;
+}
