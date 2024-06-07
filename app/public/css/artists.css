@@ -1,7 +1,7 @@
 .artistCard {
     margin: 1rem 0;
     padding: 1rem;
-    background: rgb(18, 45, 66);
+    background: rgb(108 121 183);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -40,8 +40,8 @@
     border-radius: 2rem;
     padding: .75rem 2rem;
     margin: 2rem;
-    color: rgb(255, 255, 255);
-    background: rgb(43, 71, 208);
+    color: black;
+    background: #fff;
     cursor: pointer;
 }
 
@@ -58,7 +58,7 @@
 .artistCardPC {
     margin: 1rem;
     padding: 1rem;
-    background: rgb(18, 45, 66);
+    background: rgb(108, 121, 183);
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 1rem;

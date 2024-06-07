@@ -1,5 +1,5 @@
 .aboutTitle {
-    color: rgb(255, 255, 255);
+    color: #000;
     font-family: Roboto;
     font-size: 1.375rem;
     font-style: normal;
@@ -12,7 +12,7 @@
 }
 
 .aboutTitleYellow {
-    color: rgb(240, 233, 104);
+    color: #7B87C2;
     font-family: Playfair Display;
     font-size: 1.375rem;
     font-style: normal;
@@ -25,7 +25,7 @@
 }
 
 .landPageAbout {
-    background: rgb(18, 45, 66);
+    /* background: rgb(18, 45, 66); */
     padding: 1.5rem;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .aboutText {
-    color: rgb(255, 255, 255);
+    color: #000;
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
@@ -47,7 +47,7 @@
 }
 
 .aboutSubtitle {
-    color: rgb(255, 255, 255);
+    color: #000;
     font-family: Roboto;
     font-size: 1.125rem;
     font-style: normal;

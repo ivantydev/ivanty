@@ -22,7 +22,6 @@
 }
 
 .perfilNameMobile {
-    color: rgb(255, 255, 255);
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
@@ -31,7 +30,6 @@
 }
 
 .perfilBiographName {
-    color: rgb(255, 255, 255);
     font-family: Roboto;
     font-size: 15px;
     font-style: normal;
@@ -40,7 +38,6 @@
 }
 
 .perfilAboutMobile {
-    color: rgb(255, 255, 255);
     font-family: Roboto;
     font-size: 0.9375rem;
     font-style: normal;
