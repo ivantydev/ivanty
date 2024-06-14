@@ -1,6 +1,15 @@
 var express = require("express");
 var router = express.Router();
 
+const ClienteController = require('../controllers/clienteController');
+
+router.get('/clientes', ClienteController.getAllClientes);
+router.get('/clientes/:id', ClienteController.getClienteById);
+router.post('/clientes', ClienteController.createCliente);
+router.put('/clientes/:id', ClienteController.updateCliente);
+router.delete('/clientes/:id', ClienteController.deleteCliente);
+
+
 router.get("/", function (req, res) {
     res.render("pages/index");
 });

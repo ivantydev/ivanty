@@ -1,20 +1,29 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+require('dotenv').config();
+const clienteRoutes = require('./app/routes/router'); // Certifique-se de que as rotas estão corretas
+const rotas = require("./app/routes/router");
 
-const env = require("dotenv").config();
+const PORT = process.env.PORT || 3000;
 
-app.use(express.static("app/public"));
+// Middleware para lidar com JSON
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
+// Configuração de EJS como motor de visualização
 app.set("view engine", "ejs");
 app.set("views", "./app/views");
 
-app.use(express.json()); 
-app.use(express.urlencoded({ extended: true }));
+// Servir arquivos estáticos da pasta "public"
+app.use(express.static("app/public"));
 
-var rotas = require("./app/routes/router");
+// Rotas da API
+app.use('/api', clienteRoutes);
+
+// Outras rotas
 app.use("/", rotas);
 
-app.listen(port, () => {
-  console.log(`Servidor ouvindo na porta ${port}\nhttp://localhost:${port}`);
+// Iniciar o servidor
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}\nhttp://localhost:${PORT}`);
 });
