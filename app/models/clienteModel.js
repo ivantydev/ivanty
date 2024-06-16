@@ -12,46 +12,36 @@ const ClienteModel = {
   },
 
   createCliente: async (cliente) => {
-    const { nome_cliente, email_cliente, cpf_cliente, senha_cliente, datanasc_cliente, Enderecos_id_endereco, Contatos_id_contato } = cliente;
-    const result = await pool.query('INSERT INTO Clientes SET ?', {
+    const { nome_cliente, email_cliente, cpf_cliente, senha_cliente, datanasc_cliente, Enderecos_id_endereco, Contatos_id_contato, perfil_cliente } = cliente;
+    const [result] = await pool.query('INSERT INTO Clientes SET ?', {
       nome_cliente,
-      email_cliente,
       cpf_cliente,
       senha_cliente,
       datanasc_cliente,
       Enderecos_id_endereco,
-      Contatos_id_contato
+      Contatos_id_contato,
+      perfil_cliente
     });
     return result.insertId;
   },
 
   updateCliente: async (id, cliente) => {
-    const { nome_cliente, email_cliente, cpf_cliente, senha_cliente, datanasc_cliente, Enderecos_id_endereco, Contatos_id_contato } = cliente;
-    const result = await pool.query('UPDATE Clientes SET ? WHERE id_cliente = ?', [{
+    const { nome_cliente, email_cliente, cpf_cliente, senha_cliente, datanasc_cliente, Enderecos_id_endereco, Contatos_id_contato, perfil_cliente } = cliente;
+    const [result] = await pool.query('UPDATE Clientes SET ? WHERE id_cliente = ?', [{
       nome_cliente,
-      email_cliente,
       cpf_cliente,
       senha_cliente,
       datanasc_cliente,
       Enderecos_id_endereco,
-      Contatos_id_contato
+      Contatos_id_contato,
+      perfil_cliente
     }, id]);
     return result.affectedRows;
   },
 
   deleteCliente: async (id) => {
-    const result = await pool.query('DELETE FROM Clientes WHERE id_cliente = ?', [id]);
+    const [result] = await pool.query('DELETE FROM Clientes WHERE id_cliente = ?', [id]);
     return result.affectedRows;
-  },
-
-  cadastrarCliente: async (nome, email, cpf, senha) => {
-    const result = await pool.query('INSERT INTO Clientes SET ?', {
-      nome_cliente: nome,
-      email_cliente: email,
-      cpf_cliente: cpf,
-      senha_cliente: senha
-    });
-    return result.insertId;
   }
 };
 

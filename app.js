@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
 require('dotenv').config();
-const clienteRoutes = require('./app/routes/router'); // Certifique-se de que as rotas estão corretas
-const rotas = require("./app/routes/router");
+
+// Importar os arquivos de rotas
+const clienteRoutes = require('./app/routes/clientesRoutes');
+const indexRoutes = require('./app/routes/indexRoutes');
 
 const PORT = process.env.PORT || 3000;
 
@@ -21,7 +23,7 @@ app.use(express.static("app/public"));
 app.use('/api', clienteRoutes);
 
 // Outras rotas
-app.use("/", rotas);
+app.use("/", indexRoutes);
 
 // Iniciar o servidor
 app.listen(PORT, () => {

@@ -1,65 +1,16 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 
-const ClienteController = require('../controllers/clienteController');
+// Importar rotas gerais
+const indexRoutes = require('./routes/indexRoutes');
 
-router.get('/clientes', ClienteController.getAllClientes);
-router.get('/clientes/:id', ClienteController.getClienteById);
-router.post('/clientes', ClienteController.createCliente);
-router.put('/clientes/:id', ClienteController.updateCliente);
-router.delete('/clientes/:id', ClienteController.deleteCliente);
+// Importar rotas de clientes
+const clientesRoutes = require('./routes/clientesRoutes');
 
+// Usar as rotas gerais
+router.use('/', indexRoutes);
 
-router.get("/", function (req, res) {
-    res.render("pages/index");
-});
-
-router.get("/home", function (req, res) {
-    res.render("pages/home");
-});
-
-router.get("/artists", function (req, res) {
-    res.render("pages/artists");
-});
-
-router.get("/about", function (req, res) {
-    res.render("pages/about");
-});
-
-router.get("/profile", function (req, res) {
-    res.render("pages/profile");
-});
-
-router.get('/adm', function (req, res) {
-    res.render("pages/admin/index_adm.ejs")
-})
-
-router.get('/register', function (req, res) {
-    res.render("pages/cadastro.ejs")
-})
-
-router.get('/login', function (req, res) {
-    res.render("pages/login.ejs")
-})
-
-router.get('/buyitem', function (req, res) {
-    res.render("pages/buyitem.ejs")
-})
-
-router.get('/card', function (req, res) {
-    res.render("pages/card.ejs")
-})
-
-router.get('/artist_painel', function (req, res) {
-    res.render("pages/artistPainel.ejs")
-})
-
-router.get('/artist', function (req, res) {
-    res.render("pages/artist.ejs")
-})
-
-router.get('/requests', function (req, res) {
-    res.render("pages/requests.ejs")
-})
+// Usar as rotas de clientes com prefixo '/api'
+router.use('/api', clientesRoutes);
 
 module.exports = router;

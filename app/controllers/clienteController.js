@@ -1,4 +1,9 @@
 const ClienteModel = require('../models/clienteModel');
+const pool = require('../../config/pool_conexoes');
+
+// Valores padrão para contatos e endereços
+const DEFAULT_CONTACT_ID = 1; // ID de contato padrão
+const DEFAULT_ADDRESS_ID = 1; // ID de endereço padrão
 
 const clienteController = {
   getAllClientes: async (req, res) => {
@@ -25,11 +30,32 @@ const clienteController = {
 
   createCliente: async (req, res) => {
     try {
-      if (!req.body.nome_cliente) {
-        return res.status(400).json({ error: 'Nome do cliente é obrigatório' });
+      const {
+        nome_cliente,
+        email_cliente,
+        cpf_cliente,
+        senha_cliente,
+        datanasc_cliente,
+        Enderecos_id_endereco = DEFAULT_ADDRESS_ID,
+        Contatos_id_contato = DEFAULT_CONTACT_ID,
+        perfil_cliente = 'user'
+      } = req.body;
+
+      if (!nome_cliente || !email_cliente || !cpf_cliente || !senha_cliente || !datanasc_cliente) {
+        return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
       }
 
-      const newClienteId = await ClienteModel.createCliente(req.body);
+      const newClienteId = await ClienteModel.createCliente({
+        nome_cliente,
+        email_cliente,
+        cpf_cliente,
+        senha_cliente,
+        datanasc_cliente,
+        Enderecos_id_endereco,
+        Contatos_id_contato,
+        perfil_cliente
+      });
+
       res.status(201).json({ id: newClienteId });
     } catch (error) {
       res.status(500).json({ error: error.message });
