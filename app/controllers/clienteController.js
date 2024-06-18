@@ -1,7 +1,6 @@
 const ClienteModel = require('../models/clienteModel');
 const pool = require('../../config/pool_conexoes');
 
-// Valores padrão para contatos e endereços
 const DEFAULT_CONTACT_ID = 1; // ID de contato padrão
 const DEFAULT_ADDRESS_ID = 1; // ID de endereço padrão
 
@@ -36,14 +35,13 @@ const clienteController = {
         cpf_cliente,
         senha_cliente,
         datanasc_cliente,
-        Enderecos_id_endereco = DEFAULT_ADDRESS_ID,
-        Contatos_id_contato = DEFAULT_CONTACT_ID,
-        perfil_cliente = 'user'
+        perfil_cliente = 'user',
+        cep_endereco,
+        numero_endereco,
+        complemento_endereco,
+        tipo_endereco,
+        telefone_cliente
       } = req.body;
-
-      if (!nome_cliente || !email_cliente || !cpf_cliente || !senha_cliente || !datanasc_cliente) {
-        return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
-      }
 
       const newClienteId = await ClienteModel.createCliente({
         nome_cliente,
@@ -51,9 +49,12 @@ const clienteController = {
         cpf_cliente,
         senha_cliente,
         datanasc_cliente,
-        Enderecos_id_endereco,
-        Contatos_id_contato,
-        perfil_cliente
+        perfil_cliente,
+        cep_endereco,
+        numero_endereco,
+        complemento_endereco,
+        tipo_endereco,
+        telefone_cliente
       });
 
       res.status(201).json({ id: newClienteId });
@@ -86,7 +87,32 @@ const clienteController = {
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
-  }
+  },
+
+  loginCliente: async (req, res) => {
+    try {
+        const { email_cliente, senha_cliente } = req.body;
+
+        // Verificar se o email do cliente existe no banco de dados
+        const cliente = await ClienteModel.getClienteByEmail(email_cliente);
+
+        if (!cliente) {
+            return res.status(404).json({ error: 'Cliente não encontrado' });
+        }
+
+        // Comparar a senha fornecida com a senha armazenada no banco de dados
+        const senhaValida = await bcrypt.compare(senha_cliente, cliente.senha_cliente);
+
+        if (!senhaValida) {
+            return res.status(401).json({ error: 'Credenciais inválidas' });
+        }
+
+        // Se as credenciais estiverem corretas, retornar sucesso
+        res.status(200).json({ message: 'Login realizado com sucesso' });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
 };
 
 module.exports = clienteController;

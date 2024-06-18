@@ -7,5 +7,6 @@ router.get('/clientes/:id', ClienteController.getClienteById);
 router.post('/clientes', ClienteController.createCliente);
 router.put('/clientes/:id', ClienteController.updateCliente);
 router.delete('/clientes/:id', ClienteController.deleteCliente);
+router.post('/login', ClienteController.loginCliente);
 
 module.exports = router;
