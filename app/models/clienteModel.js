@@ -25,7 +25,7 @@ const ClienteModel = {
     try {
       // Validar se todos os campos obrigatórios estão presentes
       if (!nome_cliente || !email_cliente || !cpf_cliente || !senha_cliente || !datanasc_cliente || !cep_endereco || !numero_endereco || !tipo_endereco) {
-        throw new Error('Todos os campos são obrigatórios');
+        throw new Error('Todos os campos são obrigatórios'); 
       }
 
       // Iniciar uma transação
