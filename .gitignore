@@ -1,6 +1,2 @@
-# Ignorar o diretório node_modules na raiz do projeto
 node_modules/
-
-# Ignorar arquivos com extensão .env na raiz do projeto
-*.env
 .env
